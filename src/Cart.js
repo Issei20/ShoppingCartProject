@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom"
+import { useLocation,  Link } from "react-router-dom"
 import React, { useEffect, useState } from "react"
 
 
@@ -92,7 +92,7 @@ function Cart({cartArr, setCartArr, cartQuantity, setCartQuantity, totalPrice, s
             <div className="cardCheck">Price</div>
             <div className="cardCheck">Quantity</div>
             <div className="cardCheck">Total</div>
-            </div>
+            </div>import {}
         {cartArr.map(item => {
            if(item.quantity > 0) { 
            return <div className="wrapItemCart">
@@ -118,8 +118,8 @@ function Cart({cartArr, setCartArr, cartQuantity, setCartQuantity, totalPrice, s
                 <div>Total cart price : {totalPrice} $</div> 
                  </div>
                  <div className="btnCheckoutContainer">
-                 <button className="checkoutBtnShop">Continue shopping</button>
-                     <button className="checkoutBtn">Checkout</button>
+                <Link to="/shop" style={{ textDecoration: 'none' }}> <button className="checkoutBtnShop">Continue shopping</button></Link> 
+                     <button className="checkoutBtn" onClick={() => alert("Thank you !")}>Checkout</button>
                  </div>
          </div>
         
