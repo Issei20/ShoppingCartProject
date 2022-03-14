@@ -35,7 +35,7 @@ const RouteSwitch = () => {
       <NavBar cartQuantity={cartQuantity} setCartQuantity={setCartQuantity}/>
       <Routes>
       <Route path="shop" element={<Shop cartArr={cartArr} setCartArr={setCartArr} cartQuantity={cartQuantity} setCartQuantity={setCartQuantity} totalPrice={totalPrice} setTotalPrice={setTotalPrice}/>} />
-      <Route path="/"  element={<HomePage />} />
+      <Route path="/ShoppingCartProject"  element={<HomePage />} />
       <Route path="shop/cart" element={<Cart cartArr={cartArr} setCartArr={setCartArr} cartQuantity={cartQuantity} setCartQuantity={setCartQuantity} totalPrice={totalPrice} setTotalPrice={setTotalPrice} />} />
       </Routes>
       
