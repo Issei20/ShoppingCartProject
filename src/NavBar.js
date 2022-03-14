@@ -11,7 +11,7 @@ const NavBar = ({cartQuantity, setCartQuantity}) => {
     return (<div className="navBarContainer">
         <img src={logo} alt="logo"></img>
         <ul className="navBarUl">
-        <Link to="/" style={{ textDecoration: 'none'}}> <li className="navLi">Home</li> </Link> 
+        <Link to="/ShoppingCartProject" style={{ textDecoration: 'none'}}> <li className="navLi">Home</li> </Link> 
         <Link to="shop" style={{ textDecoration: 'none' }}> <li className="navLi">Shop</li> </Link> 
         <Link to='/shop/cart' style={{ color: "rgb(36, 197, 189)", textDecoration: "none"}}>  <div className="barCart">{icon} Cart ( {cartQuantity} ) </div> </Link>
         

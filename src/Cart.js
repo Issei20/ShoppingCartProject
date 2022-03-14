@@ -92,7 +92,7 @@ function Cart({cartArr, setCartArr, cartQuantity, setCartQuantity, totalPrice, s
             <div className="cardCheck">Price</div>
             <div className="cardCheck">Quantity</div>
             <div className="cardCheck">Total</div>
-            </div>import {}
+            </div>
         {cartArr.map(item => {
            if(item.quantity > 0) { 
            return <div className="wrapItemCart">
